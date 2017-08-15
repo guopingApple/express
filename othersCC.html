@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<title>微信</title>
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+<header><a href="javascript:void(0);" class="back"></a>选择快递公司</header>
+<article class="box">
+	<section class="letterSort clearfix border-radius box-shadow"><!--update 1126-->
+    	<span class="sep red">常用<em class="d_block"></em></span>
+        <span>A<em></em></span>
+        <span class="sep">B<em></em></span>
+        <span>C<em></em></span>
+        <span class="sep">D<em></em></span>
+        <span class="borRnone">E<em></em></span>
+        <span>F<em></em></span>
+        <span class="sep">G<em></em></span>
+        <span>H<em></em></span>
+        <span class="sep">J<em></em></span>
+        <span>K<em></em></span>
+        <span class="sep borRnone">L<em></em></span>
+        <span class="sep">M<em></em></span>
+        <span>O<em></em></span>
+        <span class="sep">P<em></em></span>
+        <span>Q<em></em></span>
+        <span class="sep">R<em></em></span>
+        <span class="borRnone">S<em></em></span>
+        <span>T<em></em></span>
+        <span class="sep">U<em></em></span>
+        <span>W<em></em></span>
+        <span class="sep">X<em></em></span>
+        <span>Y<em></em></span>
+        <span class="sep borRnone">Z<em></em></span>
+    </section>
+    <section class="boxBorder f16 m20_0 border-radius box-shadow"><!--update 1126-->
+    	<h3 class="boxTitle blue pl20">A</h3>
+        <div class="grey sortResult">
+        	<span class="red">AAE全球专递</span>
+            <span>安捷快递</span>
+            <span>安信达快递</span>
+            <span>奥硕物流</span>
+        </div>
+    </section>
+</article>
+<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script>
+$(".letterSort span").each(function(i) {
+	$(this).click(function(){
+		 $(".letterSort span em").css('display','none').eq(i).css('display','block');
+		 $(".letterSort span").removeClass('red').eq(i).addClass('red');
+		 $(".boxTitle").html($(this).text());
+	})
+ })
+</script>
+</body>
+</html>

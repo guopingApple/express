@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<title>微信 我的查询</title>
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+<header class="bgred">我的查询<a href="javascript:void(0);" class="complete white"><img src="images/menu.png" width="20" class="menuIcon"></a></header>
+<div class="headMenu f16 line_h20 d_none" ontouchstart="">
+	<ul>
+    	<li>近一个月快递</li>
+        <li>近三个月快递</li>
+        <li>全部快递</li>
+    </ul>
+</div>
+<article class="box">
+	<section class="boxBorder mb15 grey border-radius box-shadow"><!--update 1126-->
+    	<h3 class="boxTitle f16 pl10">2014-11-02</h3>
+        <div class="infoDetails p10 myCx">
+        	<ul>
+            	<li>
+                	<div class="clearfix">
+                        <em class="red fr f12">在途</em>
+                        <span>15:35</span>
+                        <em class="mr10 CCname fl">顺丰速运</em>
+                        <div class="d_inline fl">20115588711514</div>
+                    </div>
+                    <div class="clearfix pt10"><a href="javascript:void(0);"  class="btnGrey fr">删除</a><a href="javascript:void(0);" class="btnGrey fr mr10">物流信息</a></div>
+                </li>
+                <li>
+                	<div class="clearfix">
+                        <em class="red fr f12">完成</em>
+                        <span>15:35</span>
+                        <em class="mr10 CCname fl">顺丰速运顺丰速运</em>
+                        <div class="d_inline fl">20115588711514</div>
+                    </div>
+                    <div class="clearfix pt10"><a href="javascript:void(0);"  class="btnGrey fr">删除</a><a href="javascript:void(0);" class="btnGrey fr mr10">物流信息</a></div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="boxBorder mb15 grey border-radius box-shadow"><!--update 1126-->
+    	<h3 class="boxTitle f16 pl10">2014-11-02</h3>
+        <div class="infoDetails p10 myCx">
+        	<ul>
+            	<li>
+                	<div class="clearfix">
+                        <em class="red fr f12">已完成</em>
+                        <span>15:35</span>
+                        <em class="mr10 CCname fl">顺丰速运</em>
+                        <div class="d_inline fl">20115588711514</div>
+                    </div>
+                    <div class="clearfix pt10"><a href="javascript:void(0);"  class="btnGrey fr">删除</a><a href="javascript:void(0);" class="btnGrey fr mr10">物流信息</a></div>
+                </li>
+                <li>
+                	<div class="clearfix">
+                        <em class="red fr f12">已完成</em>
+                        <span>15:35</span>
+                        <em class="mr10 CCname fl">顺丰速运顺丰速运</em>
+                        <div class="d_inline fl">20115588711514</div>
+                    </div>
+                    <div class="clearfix pt10"><a href="javascript:void(0);"  class="btnGrey fr">删除</a><a href="javascript:void(0);" class="btnGrey fr mr10">物流信息</a></div>
+                </li>
+            </ul>
+        </div>
+    </section>
+</article>
+<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script>
+$(document).ready(function(){
+  $("header .menuIcon").click(function(){
+  $(".headMenu").slideToggle();
+  });
+});
+</script>
+</body>
+</html>

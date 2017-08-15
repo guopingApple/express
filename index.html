@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<title>微信</title>
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+<header>查询</header>
+<section class="search ac relative">
+    <input type="search" class="iptSearch ac" placeholder="请输入快递单号" id="search" maxlength="12">
+    <span class="red cancle d_none f18" onselectstart="return false;">取消</span>
+    <span class="close d_none"></span>
+</section>
+<article class="courierComp d_none" ontouchstart="">
+	<ul>
+    	<li onClick="javascript:location.href='searchResult.html'">333555444777 &nbsp;&nbsp; 顺丰快递</li>
+        <li onClick="javascript:location.href='searchResultNone.html'">333555444777 &nbsp;&nbsp; 顺丰快递</li>
+        <li  onClick="javascript:location.href='history.html'">333555444777 &nbsp;&nbsp; 顺丰快递</li>
+        <li>333555444777 &nbsp;&nbsp; 顺丰快递</li>
+        <li class="red"  onClick="javascript:location.href='othersCC.html'">其他快递公司</li>
+    </ul>
+</article>
+<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script>
+$("input#search").focus(function(){ 
+	$(this).removeAttr("class").addClass('iptSearchFocus');
+	$(this).siblings('span').removeClass("d_none").addClass('d_block');
+  }).blur(function(){
+	  $(this).removeAttr("class").addClass('iptSearch ac');
+	  $(this).siblings('span').removeClass("d_block").addClass('d_none');
+	  $(this).val("");
+	  $(".courierComp").slideUp("slow");
+  });
+  $("input#search").keyup(function(){ 
+  	if($(this).val() != ""){
+		$(".courierComp").slideDown("slow");
+	}else{
+		$(".courierComp").slideUp("slow");
+	}
+  });
+</script>
+</body>
+</html>
